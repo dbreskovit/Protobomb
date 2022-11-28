@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/bulbOn.mp3-56d99c689945986569825210ed1c5f44.mp3str"
+path="res://.import/bulbOn.mp3-03ad61bfa3ccb7c6718a559416558804.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/bulbOn.mp3"
-dest_files=[ "res://.import/bulbOn.mp3-56d99c689945986569825210ed1c5f44.mp3str" ]
+source_file="res://Assets/sounds/bulbOn.mp3"
+dest_files=[ "res://.import/bulbOn.mp3-03ad61bfa3ccb7c6718a559416558804.mp3str" ]
 
 [params]
 

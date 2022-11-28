@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/componentUnclick.mp3-476e90ed14e3920b131ee8b9fa4486ea.mp3str"
+path="res://.import/componentUnclick.mp3-121fd737aa0de22028e51047a0831d33.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/componentUnclick.mp3"
-dest_files=[ "res://.import/componentUnclick.mp3-476e90ed14e3920b131ee8b9fa4486ea.mp3str" ]
+source_file="res://Assets/sounds/componentUnclick.mp3"
+dest_files=[ "res://.import/componentUnclick.mp3-121fd737aa0de22028e51047a0831d33.mp3str" ]
 
 [params]
 

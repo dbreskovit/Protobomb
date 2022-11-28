@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/levelWin.mp3-7ed682ac548d978f6012d19495bb13d4.mp3str"
+path="res://.import/levelWin.mp3-ca02b80b96c6c7a8110fd734e1c029d2.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/levelWin.mp3"
-dest_files=[ "res://.import/levelWin.mp3-7ed682ac548d978f6012d19495bb13d4.mp3str" ]
+source_file="res://Assets/sounds/levelWin.mp3"
+dest_files=[ "res://.import/levelWin.mp3-ca02b80b96c6c7a8110fd734e1c029d2.mp3str" ]
 
 [params]
 

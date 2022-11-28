@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/switchOpen.mp3-b9798432c01f82c6bd067ddfdc65cd30.mp3str"
+path="res://.import/switchOpen.mp3-6727123b9db6d2d41f9df528741a95eb.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/switchOpen.mp3"
-dest_files=[ "res://.import/switchOpen.mp3-b9798432c01f82c6bd067ddfdc65cd30.mp3str" ]
+source_file="res://Assets/sounds/switchOpen.mp3"
+dest_files=[ "res://.import/switchOpen.mp3-6727123b9db6d2d41f9df528741a95eb.mp3str" ]
 
 [params]
 

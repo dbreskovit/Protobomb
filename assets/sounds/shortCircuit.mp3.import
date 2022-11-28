@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/shortCircuit.mp3-2be3f7ea2fe1ccc0934af4bb2a140224.mp3str"
+path="res://.import/shortCircuit.mp3-84b64dad2337d60b432968b36bae9a81.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/shortCircuit.mp3"
-dest_files=[ "res://.import/shortCircuit.mp3-2be3f7ea2fe1ccc0934af4bb2a140224.mp3str" ]
+source_file="res://Assets/sounds/shortCircuit.mp3"
+dest_files=[ "res://.import/shortCircuit.mp3-84b64dad2337d60b432968b36bae9a81.mp3str" ]
 
 [params]
 

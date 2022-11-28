@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/componentBlip.mp3-b9b21f92d8b29b626a6cc177e557b1ee.mp3str"
+path="res://.import/componentBlip.mp3-0b3d3d9c5e556b76d8a2a35c1c9f828d.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/componentBlip.mp3"
-dest_files=[ "res://.import/componentBlip.mp3-b9b21f92d8b29b626a6cc177e557b1ee.mp3str" ]
+source_file="res://Assets/sounds/componentBlip.mp3"
+dest_files=[ "res://.import/componentBlip.mp3-0b3d3d9c5e556b76d8a2a35c1c9f828d.mp3str" ]
 
 [params]
 

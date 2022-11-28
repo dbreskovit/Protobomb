@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/bulbOnTop.mp3-24c441f92d4d86cced1f580f3ccff420.mp3str"
+path="res://.import/bulbOnTop.mp3-c141682a244dc6a40a45a9d0bfa536f3.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/bulbOnTop.mp3"
-dest_files=[ "res://.import/bulbOnTop.mp3-24c441f92d4d86cced1f580f3ccff420.mp3str" ]
+source_file="res://Assets/sounds/bulbOnTop.mp3"
+dest_files=[ "res://.import/bulbOnTop.mp3-c141682a244dc6a40a45a9d0bfa536f3.mp3str" ]
 
 [params]
 
