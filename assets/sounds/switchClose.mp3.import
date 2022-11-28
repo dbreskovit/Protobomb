@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/switchClose.mp3-bb8b526b8cf8fa80a9ee360fd1dc88bd.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/switchClose.mp3"
+dest_files=[ "res://.import/switchClose.mp3-bb8b526b8cf8fa80a9ee360fd1dc88bd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

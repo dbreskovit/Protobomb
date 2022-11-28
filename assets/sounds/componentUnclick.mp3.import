@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/componentUnclick.mp3-476e90ed14e3920b131ee8b9fa4486ea.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/componentUnclick.mp3"
+dest_files=[ "res://.import/componentUnclick.mp3-476e90ed14e3920b131ee8b9fa4486ea.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

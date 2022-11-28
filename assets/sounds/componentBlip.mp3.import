@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/componentBlip.mp3-b9b21f92d8b29b626a6cc177e557b1ee.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/componentBlip.mp3"
+dest_files=[ "res://.import/componentBlip.mp3-b9b21f92d8b29b626a6cc177e557b1ee.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

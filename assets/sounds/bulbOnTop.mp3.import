@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bulbOnTop.mp3-24c441f92d4d86cced1f580f3ccff420.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/bulbOnTop.mp3"
+dest_files=[ "res://.import/bulbOnTop.mp3-24c441f92d4d86cced1f580f3ccff420.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

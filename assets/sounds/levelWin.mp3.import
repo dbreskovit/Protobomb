@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/levelWin.mp3-7ed682ac548d978f6012d19495bb13d4.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/levelWin.mp3"
+dest_files=[ "res://.import/levelWin.mp3-7ed682ac548d978f6012d19495bb13d4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
