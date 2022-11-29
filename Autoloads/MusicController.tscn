@@ -1,0 +1,65 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Scripts/MusicController.gd" type="Script" id=1]
+[ext_resource path="res://Assets/sounds/sfx/introPS2.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Assets/sounds/gameSoundTrack.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Assets/sounds/sfx/switchOpen.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Assets/sounds/sfx/shortCircuit.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/sounds/sfx/bulbOn.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assets/sounds/sfx/componentBlip.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assets/sounds/sfx/clock.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Assets/sounds/menuSoundTrack.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Assets/sounds/sfx/bulbOnTop.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Assets/sounds/sfx/switchClose.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Assets/sounds/sfx/levelWin.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Assets/sounds/sfx/componentUnclick.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Assets/sounds/sfx/componentClick.ogg" type="AudioStream" id=14]
+[ext_resource path="res://Assets/sounds/sfx/bulbBuzzTop.ogg" type="AudioStream" id=15]
+
+[node name="MusicController" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="sfx_intro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="sfx_clock" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="sfx_bulbBuzzTop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+volume_db = -5.0
+
+[node name="sfx_bulbOn" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="sfx_bulbOnTop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="sfx_componentBlip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="sfx_componentClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+
+[node name="sfx_componentUnclick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="sfx_levelWin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="shortCircuit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="sfx_switchClose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="sfx_switchOpen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="msc_menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -10.0
+
+[node name="msc_game" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.0

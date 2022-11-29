@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/awesome_splash/core/SplashContainer.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/demo_collection/dark/splash_screen.tscn" type="PackedScene" id=3]
+
+[node name="SplashContainer" type="Node2D"]
+script = ExtResource( 1 )
+move_to_scene = ExtResource( 2 )
+trainsition_type = 0
+
+[node name="SplashDark" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 125 )
+logo_path = "res://Assets/UI/logo_curso_branco.png"
+title = ""
+description = ""
+duration = 3.0
+vfx_color = Color( 0.0431373, 0.411765, 0, 1 )

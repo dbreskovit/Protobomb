@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/componentUnclick.ogg-7bd01ee3fd0b2d3fd7cac4a3766c558f.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/sfx/componentUnclick.ogg"
+dest_files=[ "res://.import/componentUnclick.ogg-7bd01ee3fd0b2d3fd7cac4a3766c558f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

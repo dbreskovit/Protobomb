@@ -1,0 +1,144 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/sprites/background.png" type="Texture" id=1]
+[ext_resource path="res://Assets/sprites/bomba_transparente.png" type="Texture" id=2]
+[ext_resource path="res://Assets/sprites/circuito.png" type="Texture" id=3]
+[ext_resource path="res://Assets/sprites/lampada.png" type="Texture" id=4]
+[ext_resource path="res://Assets/fonts/DS-DIGI.TTF" type="DynamicFontData" id=5]
+[ext_resource path="res://Scripts/Timer.gd" type="Script" id=6]
+[ext_resource path="res://Assets/sounds/sfx/clock.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assets/sprites/table_front.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/Ponteiro.gd" type="Script" id=9]
+[ext_resource path="res://Assets/sprites/ponteiro.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/Jogo.gd" type="Script" id=11]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 5.0
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+font_data = ExtResource( 5 )
+
+[node name="Jogo" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite" parent="Background"]
+position = Vector2( 480, 320 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pointer" type="KinematicBody2D" parent="Background"]
+position = Vector2( 847, 95 )
+rotation = -2.26893
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+number = 65
+
+[node name="Sprite" type="Sprite" parent="Background/Pointer"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 10 )
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Pointer"]
+shape = SubResource( 2 )
+
+[node name="Pointer2" type="KinematicBody2D" parent="Background"]
+position = Vector2( 268, 4 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+number = 45
+
+[node name="Sprite" type="Sprite" parent="Background/Pointer2"]
+position = Vector2( 0, -18 )
+texture = ExtResource( 10 )
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Pointer2"]
+shape = SubResource( 2 )
+
+[node name="Table" type="Sprite" parent="Background"]
+position = Vector2( 480, 401 )
+scale = Vector2( 0.96718, 0.971206 )
+texture = ExtResource( 8 )
+
+[node name="Bomba" type="StaticBody2D" parent="."]
+position = Vector2( 480, 422 )
+
+[node name="Body" type="Sprite" parent="Bomba"]
+position = Vector2( 5, -20 )
+scale = Vector2( 0.825853, 0.825853 )
+texture = ExtResource( 2 )
+
+[node name="Circuito" type="Sprite" parent="Bomba"]
+position = Vector2( -74, -9 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+
+[node name="Button" type="Button" parent="Bomba"]
+margin_left = -193.0
+margin_top = 75.0
+margin_right = -21.0
+margin_bottom = 284.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( -21, -44 )
+icon = ExtResource( 4 )
+flat = true
+
+[node name="Button2" type="Button" parent="Bomba"]
+margin_left = -25.0
+margin_top = -76.0
+margin_right = 147.0
+margin_bottom = 133.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( -21, -44 )
+icon = ExtResource( 4 )
+flat = true
+
+[node name="Button3" type="Button" parent="Bomba"]
+margin_left = -99.0
+margin_top = -76.0
+margin_right = 73.0
+margin_bottom = 133.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( -21, -44 )
+icon = ExtResource( 4 )
+flat = true
+
+[node name="Button4" type="Button" parent="Bomba"]
+margin_left = -48.0
+margin_top = 75.0
+margin_right = 124.0
+margin_bottom = 284.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( -21, -44 )
+icon = ExtResource( 4 )
+flat = true
+
+[node name="Button5" type="Button" parent="Bomba"]
+margin_left = 7.0
+margin_top = 75.0
+margin_right = 179.0
+margin_bottom = 284.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( -21, -44 )
+icon = ExtResource( 4 )
+flat = true
+
+[node name="Clock" type="AudioStreamPlayer" parent="Bomba"]
+stream = ExtResource( 7 )
+
+[node name="Timer" type="Label" parent="Bomba"]
+margin_left = 127.0
+margin_top = -148.0
+margin_right = 225.0
+margin_bottom = -102.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "05:00"
+script = ExtResource( 6 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bulbOn.ogg-1b5234f7cd7aeb5d73ca7973aebeb87f.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/sfx/bulbOn.ogg"
+dest_files=[ "res://.import/bulbOn.ogg-1b5234f7cd7aeb5d73ca7973aebeb87f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

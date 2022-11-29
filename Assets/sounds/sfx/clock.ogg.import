@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/clock.ogg-d30a3fbd5f82e4d1289378c8cad84654.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/sfx/clock.ogg"
+dest_files=[ "res://.import/clock.ogg-d30a3fbd5f82e4d1289378c8cad84654.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
