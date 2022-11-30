@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/circuito/circuitofase1.png" type="Texture" id=1]
+
+[node name="Popup" type="Popup"]
+visible = true
+margin_right = 1025.0
+margin_bottom = 599.0
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1030.0
+margin_bottom = 603.0
+
+[node name="Circuitofase1" type="Sprite" parent="Panel"]
+position = Vector2( 518, 279 )
+texture = ExtResource( 1 )
