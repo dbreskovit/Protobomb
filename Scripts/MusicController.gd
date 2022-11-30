@@ -11,3 +11,6 @@ func play_music(msc):
 
 func stop_music(msc):
 	get_node(msc).stop()
+
+func stop_sfx(sfx):
+	get_node(sfx).stop()

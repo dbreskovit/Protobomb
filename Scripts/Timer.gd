@@ -7,6 +7,8 @@ func _process(_delta):
 	if VariablesGlobal.time_passed == "00:00":
 		var _move = get_tree().change_scene("res://Scenes/GameOver.tscn")
 		MusicController.stop_music("msc_game")
+		MusicController.stop_sfx("sfx_clock")
+		MusicController.stop_sfx("sfx_bulbBuzzTop")
 	pass
 
 func _ready():

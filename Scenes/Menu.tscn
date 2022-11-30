@@ -97,5 +97,7 @@ custom_fonts/font = SubResource( 1 )
 text = "Sair"
 flat = true
 
+[connection signal="mouse_entered" from="Controls/startBtn" to="." method="_on_startBtn_mouse_entered"]
 [connection signal="pressed" from="Controls/startBtn" to="." method="_on_startBtn_pressed"]
+[connection signal="mouse_entered" from="Controls/quitBtn" to="." method="_on_quitBtn_mouse_entered"]
 [connection signal="pressed" from="Controls/quitBtn" to="." method="_on_quitBtn_pressed"]
