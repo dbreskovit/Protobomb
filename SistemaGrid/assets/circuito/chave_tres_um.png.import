@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chave_tres_um.png-93b74b814bf2850152a7458c1a18ea3b.stex"
+path="res://.import/chave_tres_um.png-be5020026ad94e6d2040117576023f7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/circuito/chave_tres_um.png"
-dest_files=[ "res://.import/chave_tres_um.png-93b74b814bf2850152a7458c1a18ea3b.stex" ]
+source_file="res://SistemaGrid/assets/circuito/chave_tres_um.png"
+dest_files=[ "res://.import/chave_tres_um.png-be5020026ad94e6d2040117576023f7b.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

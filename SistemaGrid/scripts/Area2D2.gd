@@ -50,7 +50,7 @@ func _process(delta):
 		
 		var scene = ""
 		if VarGlobal.selectedComponent == "Chave3t":
-			scene = preload("res://scenes/chave3t.tscn")
+			scene = preload("res://SistemaGrid/scenes/chave3t.tscn")
 			
 		var instance = scene.instance()
 		if self.rotation_degrees == 90:

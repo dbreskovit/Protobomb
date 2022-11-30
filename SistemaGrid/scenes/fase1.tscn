@@ -1,38 +1,39 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://scenes/eletron.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/menuComponentes.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scripts/Area2D.gd" type="Script" id=3]
-[ext_resource path="res://assets/blueprint.png" type="Texture" id=4]
-[ext_resource path="res://assets/circuito/restart.png" type="Texture" id=5]
-[ext_resource path="res://scripts/caminho.gd" type="Script" id=6]
-[ext_resource path="res://scripts/grid.gd" type="Script" id=7]
-[ext_resource path="res://scripts/Area2D2.gd" type="Script" id=8]
-[ext_resource path="res://assets/download (1).png" type="Texture" id=9]
-[ext_resource path="res://assets/circuito/fonte.png" type="Texture" id=10]
-[ext_resource path="res://assets/circuito/lampada_desligada_20v.png" type="Texture" id=11]
-[ext_resource path="res://assets/circuito/lampada_desligada_10v.png" type="Texture" id=12]
-[ext_resource path="res://assets/circuito/chave_aberta.png" type="Texture" id=13]
-[ext_resource path="res://assets/circuito/lampada_ligada_20v.png" type="Texture" id=14]
-[ext_resource path="res://assets/circuito/chave_tres_um.png" type="Texture" id=15]
-[ext_resource path="res://assets/circuito/chave_tres_dois.png" type="Texture" id=16]
-[ext_resource path="res://assets/circuito/lampada_ligada_10v.png" type="Texture" id=17]
-[ext_resource path="res://assets/fase1p.png" type="Texture" id=18]
-[ext_resource path="res://assets/circuito/start.png" type="Texture" id=19]
+[ext_resource path="res://SistemaGrid/scenes/eletron.tscn" type="PackedScene" id=1]
+[ext_resource path="res://SistemaGrid/scenes/menuComponentes.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SistemaGrid/scripts/Area2D.gd" type="Script" id=3]
+[ext_resource path="res://SistemaGrid/assets/blueprint.png" type="Texture" id=4]
+[ext_resource path="res://SistemaGrid/assets/circuito/restart.png" type="Texture" id=5]
+[ext_resource path="res://SistemaGrid/scripts/caminho.gd" type="Script" id=6]
+[ext_resource path="res://SistemaGrid/scripts/grid.gd" type="Script" id=7]
+[ext_resource path="res://SistemaGrid/scripts/Area2D2.gd" type="Script" id=8]
+[ext_resource path="res://SistemaGrid/assets/download (1).png" type="Texture" id=9]
+[ext_resource path="res://SistemaGrid/assets/circuito/fonte.png" type="Texture" id=10]
+[ext_resource path="res://SistemaGrid/assets/circuito/lampada_desligada_20v.png" type="Texture" id=11]
+[ext_resource path="res://SistemaGrid/assets/circuito/lampada_desligada_10v.png" type="Texture" id=12]
+[ext_resource path="res://SistemaGrid/assets/circuito/chave_aberta.png" type="Texture" id=13]
+[ext_resource path="res://SistemaGrid/assets/circuito/lampada_ligada_20v.png" type="Texture" id=14]
+[ext_resource path="res://SistemaGrid/assets/circuito/chave_tres_um.png" type="Texture" id=15]
+[ext_resource path="res://SistemaGrid/assets/circuito/chave_tres_dois.png" type="Texture" id=16]
+[ext_resource path="res://SistemaGrid/assets/circuito/lampada_ligada_10v.png" type="Texture" id=17]
+[ext_resource path="res://SistemaGrid/assets/fase1p.png" type="Texture" id=18]
+[ext_resource path="res://SistemaGrid/assets/circuito/start.png" type="Texture" id=19]
+[ext_resource path="res://Scenes/Timer.tscn" type="PackedScene" id=20]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 49, 44.5 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 16 ) ],
-"loop": true,
-"name": "2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "2",
 "speed": 5.0
 } ]
 
@@ -41,27 +42,27 @@ extents = Vector2( 48, 12.5 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 17 ) ],
-"loop": true,
-"name": "ligada",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "desligada",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "ligada",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "ligada",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "desligada",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "ligada",
 "speed": 5.0
 } ]
 
@@ -14239,6 +14240,12 @@ rotation = -1.59538
 [node name="Fase1p" type="Sprite" parent="."]
 position = Vector2( 828, -223 )
 texture = ExtResource( 18 )
+
+[node name="Timer" parent="." instance=ExtResource( 20 )]
+margin_left = 480.0
+margin_top = -430.0
+margin_right = 654.0
+margin_bottom = -349.0
 
 [connection signal="pressed" from="CenterContainer/restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="CenterContainer2/start" to="." method="_on_start_pressed"]

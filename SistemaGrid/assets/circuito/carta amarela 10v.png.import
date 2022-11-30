@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carta amarela 10v.png-8940ae7c6c5c3c410ae285812a32eb56.stex"
+path="res://.import/carta amarela 10v.png-7fdaafa77250fefd3c0c6d79b7007e3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/circuito/carta amarela 10v.png"
-dest_files=[ "res://.import/carta amarela 10v.png-8940ae7c6c5c3c410ae285812a32eb56.stex" ]
+source_file="res://SistemaGrid/assets/circuito/carta amarela 10v.png"
+dest_files=[ "res://.import/carta amarela 10v.png-7fdaafa77250fefd3c0c6d79b7007e3c.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

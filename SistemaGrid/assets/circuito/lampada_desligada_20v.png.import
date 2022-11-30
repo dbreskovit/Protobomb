@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lampada_desligada_20v.png-f723dedcfd9049f79520e519ad08c7fd.stex"
+path="res://.import/lampada_desligada_20v.png-ee93cfad30f939d9b78d6e95f1608b8b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/circuito/lampada_desligada_20v.png"
-dest_files=[ "res://.import/lampada_desligada_20v.png-f723dedcfd9049f79520e519ad08c7fd.stex" ]
+source_file="res://SistemaGrid/assets/circuito/lampada_desligada_20v.png"
+dest_files=[ "res://.import/lampada_desligada_20v.png-ee93cfad30f939d9b78d6e95f1608b8b.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

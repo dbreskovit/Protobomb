@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/download (1).png" type="Texture" id=1]
-[ext_resource path="res://assets/circuito/chave_tres_dois.png" type="Texture" id=2]
-[ext_resource path="res://assets/circuito/chave_tres_um.png" type="Texture" id=3]
-[ext_resource path="res://scripts/chave3t.gd" type="Script" id=4]
+[ext_resource path="res://SistemaGrid/assets/download (1).png" type="Texture" id=1]
+[ext_resource path="res://SistemaGrid/assets/circuito/chave_tres_dois.png" type="Texture" id=2]
+[ext_resource path="res://SistemaGrid/assets/circuito/chave_tres_um.png" type="Texture" id=3]
+[ext_resource path="res://SistemaGrid/scripts/chave3t.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 76, 75 )

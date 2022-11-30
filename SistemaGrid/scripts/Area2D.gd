@@ -12,6 +12,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if selected && Input.is_action_pressed("click"):
+		MusicController.play_sfx("sfx_componentBlip")
 		for child in get_parent().get_children():
 			var childgroup = ""
 			var isgroup = true
@@ -50,13 +51,13 @@ func _process(delta):
 		
 		var scene = ""
 		if VarGlobal.selectedComponent == "Fonte10v":
-			scene = preload("res://scenes/fonte10v.tscn")
+			scene = preload("res://SistemaGrid/scenes/fonte10v.tscn")
 		elif VarGlobal.selectedComponent == "Lampada10v":
-			scene = preload("res://scenes/lampada10v.tscn")
+			scene = preload("res://SistemaGrid/scenes/lampada10v.tscn")
 		elif VarGlobal.selectedComponent == "Lampada20v":
-			scene = preload("res://scenes/lampada20v.tscn")
+			scene = preload("res://SistemaGrid/scenes/lampada20v.tscn")
 		elif VarGlobal.selectedComponent == "Chave2t":
-			scene = preload("res://scenes/chave2t.tscn")
+			scene = preload("res://SistemaGrid/scenes/chave2t.tscn")
 			
 		var instance = scene.instance()
 		

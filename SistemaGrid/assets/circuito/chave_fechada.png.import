@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chave_fechada.png-a93e013b85df76f6d4d6d484851d7fc7.stex"
+path="res://.import/chave_fechada.png-fc1c7ba1815f755bd82d8156b9f86450.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/circuito/chave_fechada.png"
-dest_files=[ "res://.import/chave_fechada.png-a93e013b85df76f6d4d6d484851d7fc7.stex" ]
+source_file="res://SistemaGrid/assets/circuito/chave_fechada.png"
+dest_files=[ "res://.import/chave_fechada.png-fc1c7ba1815f755bd82d8156b9f86450.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

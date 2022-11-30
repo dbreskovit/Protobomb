@@ -27,10 +27,11 @@ stream = ExtResource( 8 )
 
 [node name="sfx_bulbBuzzTop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
-volume_db = -5.0
+volume_db = -10.0
 
 [node name="sfx_bulbOn" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+volume_db = 15.0
 
 [node name="sfx_bulbOnTop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )

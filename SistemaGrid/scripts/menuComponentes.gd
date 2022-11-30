@@ -18,23 +18,27 @@ func _ready():
 
 func _on_lampada10v_pressed():
 	VarGlobal.setSelectedComponent("Lampada10v")
+	MusicController.play_sfx("sfx_componentClick")
 
 
 func _on_fonte10v_pressed():
 	VarGlobal.setSelectedComponent("Fonte10v")
-	print("fonte")
+	MusicController.play_sfx("sfx_componentClick")
 
 
 func _on_lampada20v_pressed():
 	VarGlobal.setSelectedComponent("Lampada20v")
+	MusicController.play_sfx("sfx_componentClick")
 
 
 func _on_chave2t_pressed():
 	VarGlobal.setSelectedComponent("Chave2t")
+	MusicController.play_sfx("sfx_componentClick")
 
 
 func _on_chave3t_pressed():
 	VarGlobal.setSelectedComponent("Chave3t")
+	MusicController.play_sfx("sfx_componentClick")
 
 
 func _on_reload_pressed():

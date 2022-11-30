@@ -31,14 +31,14 @@ func init():
 			Area2d = get_node_or_null(Area2d)
 			var node = get_node_or_null(path)
 			if node != null:
-				node.texture_normal = load("res://assets/download (1).png")
+				node.texture_normal = load("res://SistemaGrid/assets/download (1).png")
 				node.add_to_group("node")
 				var position2d = Position2D.new()
 				position2d.gizmo_extents = 14
 				position2d.name = "Position2D"
 				position2d.position = Vector2(15, 15)
 				node.add_child(position2d)
-				node.set_script(load("res://scripts/node.gd"))
+				node.set_script(load("res://SistemaGrid/scripts/node.gd"))
 				node.set_process(true)
 				node.get_parent().use_top_left = true
 				node.get_parent().set_mouse_filter(Control.MOUSE_FILTER_IGNORE) 
@@ -80,7 +80,7 @@ func _on_TextureButton_pressed(node):
 	var pW = get_node(String(node.get_path())+"/Position2D").global_position
 	if mouseOnNode:
 		if fio == null:
-			var scene = preload("res://scenes/fio.tscn")
+			var scene = preload("res://SistemaGrid/scenes/fio.tscn")
 			var instance = scene.instance()
 			instance.add_point(Vector2(0, 0))
 			instance.position = p
@@ -140,13 +140,21 @@ func _on_TextureButton_mouse_exited():
 
 func _on_restart_pressed():
 	get_tree().reload_current_scene()
+	MusicController.play_sfx("sfx_switchClose")
 	
 
 
 func _on_start_pressed():
 	if finalized:
-		get_tree().quit()
+		if fase == 1:
+			VariablesGlobal.lamp_1 = true
+		elif fase == 2:
+			VariablesGlobal.lamp_2 = true
+		elif fase == 3:
+			VariablesGlobal.lamp_3 = true
+		get_tree().change_scene("res://Scenes/Jogo.tscn")
 	else:
+		MusicController.play_sfx("sfx_switchOpen")
 		if fase == 1:
 			verificarf1()
 		elif fase == 2:
@@ -170,7 +178,8 @@ func verificarf1():
 											get_node("GridContainer/row3/R3R4c7/lampada10v/Lampada10v/Lampada10v").animation = "ligada"
 											get_node_or_null("GridContainer/row2/a45/chave2t/Chave2t/Chave2t").animation = "fechada"
 											finalized = true
-											#LIGAR A LAMP DO NÍVEL AQUI
+											MusicController.play_sfx("sfx_bulbOnTop")
+											
 
 func verificarf2():
 	if(get_node_or_null("GridContainer/row3/R3R4c2/fonte10v") != null):
@@ -206,6 +215,7 @@ func verificarf2():
 																get_node_or_null("GridContainer/row2/a34/chave2t/Chave2t/Chave2t").animation = "fechada"
 																get_node_or_null("GridContainer/row2/a56/chave2t/Chave2t/Chave2t").animation = "fechada"
 																finalized = true
+																MusicController.play_sfx("sfx_bulbOnTop")
 												
 func verificar3():
 	if(get_node_or_null("GridContainer/row3/R3R4c2/fonte10v") != null):
@@ -234,3 +244,4 @@ func verificar3():
 																
 																VarGlobal.start  = true
 																finalized = true
+																MusicController.play_sfx("sfx_bulbOnTop")

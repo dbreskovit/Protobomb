@@ -1,11 +1,11 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/sprites/background.png" type="Texture" id=1]
 [ext_resource path="res://Assets/sprites/bomba_transparente.png" type="Texture" id=2]
 [ext_resource path="res://Assets/sprites/circuito.png" type="Texture" id=3]
 [ext_resource path="res://Assets/sprites/lampada.png" type="Texture" id=4]
-[ext_resource path="res://Assets/fonts/DS-DIGI.TTF" type="DynamicFontData" id=5]
-[ext_resource path="res://Scripts/Timer.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/Timer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/UI/led.png" type="Texture" id=6]
 [ext_resource path="res://Assets/sounds/sfx/clock.ogg" type="AudioStream" id=7]
 [ext_resource path="res://Assets/sprites/table_front.png" type="Texture" id=8]
 [ext_resource path="res://Scripts/Ponteiro.gd" type="Script" id=9]
@@ -14,10 +14,6 @@
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 5.0
-
-[sub_resource type="DynamicFont" id=1]
-size = 45
-font_data = ExtResource( 5 )
 
 [node name="Jogo" type="Node2D"]
 script = ExtResource( 11 )
@@ -130,15 +126,27 @@ rect_pivot_offset = Vector2( -21, -44 )
 icon = ExtResource( 4 )
 flat = true
 
+[node name="Button6" type="Button" parent="Bomba"]
+visible = false
+margin_left = 210.0
+margin_top = 31.0
+margin_right = 272.0
+margin_bottom = 87.0
+icon = ExtResource( 6 )
+flat = true
+
 [node name="Clock" type="AudioStreamPlayer" parent="Bomba"]
 stream = ExtResource( 7 )
 
-[node name="Timer" type="Label" parent="Bomba"]
+[node name="Timer" parent="Bomba" instance=ExtResource( 5 )]
 margin_left = 127.0
 margin_top = -148.0
 margin_right = 225.0
 margin_bottom = -102.0
-custom_colors/font_color = Color( 1, 0, 0, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "05:00"
-script = ExtResource( 6 )
+
+[connection signal="pressed" from="Bomba/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Bomba/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Bomba/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Bomba/Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Bomba/Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Bomba/Button6" to="." method="_on_Button6_pressed"]

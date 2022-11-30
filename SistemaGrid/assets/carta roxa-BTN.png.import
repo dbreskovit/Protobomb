@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carta roxa-BTN.png-b2316883c085ec7a0c55ad955e67bd4e.stex"
+path="res://.import/carta roxa-BTN.png-61849ea3da4cb970b81e3d927d5187c3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/carta roxa-BTN.png"
-dest_files=[ "res://.import/carta roxa-BTN.png-b2316883c085ec7a0c55ad955e67bd4e.stex" ]
+source_file="res://SistemaGrid/assets/carta roxa-BTN.png"
+dest_files=[ "res://.import/carta roxa-BTN.png-61849ea3da4cb970b81e3d927d5187c3.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

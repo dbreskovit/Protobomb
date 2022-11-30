@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://assets/circuito/circuitofase1.png" type="Texture" id=1]
+[ext_resource path="res://SistemaGrid/assets/circuito/circuitofase1.png" type="Texture" id=1]
 
 [node name="Popup" type="Popup"]
 visible = true

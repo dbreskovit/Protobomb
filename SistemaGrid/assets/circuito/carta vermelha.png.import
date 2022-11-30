@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carta vermelha.png-1e2217808296b815d6978ce7d0ee2506.stex"
+path="res://.import/carta vermelha.png-8f303dd8422921d672674fc0ca36428e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/circuito/carta vermelha.png"
-dest_files=[ "res://.import/carta vermelha.png-1e2217808296b815d6978ce7d0ee2506.stex" ]
+source_file="res://SistemaGrid/assets/circuito/carta vermelha.png"
+dest_files=[ "res://.import/carta vermelha.png-8f303dd8422921d672674fc0ca36428e.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

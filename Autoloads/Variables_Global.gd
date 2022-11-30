@@ -3,7 +3,7 @@ extends Node
 var timer_on = true
 var cock = false
 var time_passed
-var time = 10
+var time = 420
 
 var lamp_1 = false
 var lamp_2 = false

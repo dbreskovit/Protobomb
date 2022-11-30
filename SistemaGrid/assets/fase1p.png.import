@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fase1p.png-c6f78b0449c1f97dfe55c773d3621358.stex"
+path="res://.import/fase1p.png-a462cd1d1c993045be2e97854d70a019.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fase1p.png"
-dest_files=[ "res://.import/fase1p.png-c6f78b0449c1f97dfe55c773d3621358.stex" ]
+source_file="res://SistemaGrid/assets/fase1p.png"
+dest_files=[ "res://.import/fase1p.png-a462cd1d1c993045be2e97854d70a019.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
